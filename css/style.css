@@ -119,3 +119,44 @@ justify-content: center;
     display: flex;
     justify-content: center;
 }
+.playlistMainPic{
+    width: 500px;
+}
+.playlistTracks{
+    font-size: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: left;
+}
+.playlistDetail{
+    background-color: #0C1821;
+    display: flex;
+    justify-content: center;
+}
+.playlistPic{
+    width: 40px;
+}
+.artistSection{
+    background-color: #0C1821;
+    display: flex;
+    justify-content: center;
+}
+.searchHome{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+.searchTracks{
+    font-size: 40px;
+    text-decoration: none;
+    color: #0C1821;
+    text-align: left;
+}
+.fa-solid fa-circle-play{
+    size: 60px;
+}
+.searchMiniPic{
+    width: 40px;
+    height: 40px;
+}
