@@ -1,0 +1,121 @@
+body{margin: 0;}
+ul, ol {padding: 0;}
+li {list-style-type: none;}
+
+.bodyIndex{
+    background-color: aliceblue;
+}
+
+.headerPadre{
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logoContainer{
+    align-self: center;
+}
+.track-list{
+    display: flex;
+    flex-direction: row;
+}
+.album-list{
+    display: flex;
+    flex-direction: row;
+}
+.artist-list{
+    display: flex;
+    flex-direction: row;
+    
+}
+.indexArtistPic{
+    height: 300px;
+    width: 300px;
+}
+.indexAlbumsPic{
+    height: 300px;
+    width: 300px; 
+}
+.indexSongPic{
+    height: 300px;
+    width: 300px; 
+}
+.indexSubtitles{
+    text-align: center;
+    font-size: 50px;
+}
+.trackIndexList{
+    text-align: center;
+}
+.trackIndexLinks{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgreen;
+}
+.albumIndexLinks{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgreen;
+}
+.artistIndexLinks{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgreen;
+}
+.trackDetailText{
+    text-align: center;
+}
+.buttonTrack{
+    position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 5px solid #0ccc3c;
+padding: 5px;
+}
+.tituloDetail{
+    text-align: center;
+
+}
+.detailTrackPic{
+    height: 300px;
+    width: 300px;
+}
+.trackDetail{
+background: #dac4c4;
+display: flex;
+justify-content: center;
+}
+.trackDetailText{
+    font-size: 20px;
+    text-align: center;
+    color: black
+}
+.albumDetailText{
+    font-size: 20px;
+}
+.albumDetailTrackList{
+    font-size: 25px;
+    text-decoration: none;
+    color: darkgreen;
+}
+.detailArtistPic{
+    height: 300px;
+}
+.genresMainPic{
+    width: 400px;
+}
+.genreMain{
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+}
