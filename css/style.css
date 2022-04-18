@@ -160,3 +160,208 @@ justify-content: center;
     width: 40px;
     height: 40px;
 }
+/*MEDIDAS MOBILE*/
+@media (max-width: 390px) {
+    .headerPadre{
+        height: 105vw;
+        width: 380vw;
+        background-color: ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1Index{
+        opacity: 0;
+    }
+
+    .logo{
+        height: 100vw;
+        width: auto;
+        opacity: ;
+    }
+    .logoContainer{
+        height: 185vw;
+        align-self: center;
+    }
+    
+    .search{
+        width: 220vw;
+        height: 80vw;
+        align-self: flex-end;
+    }
+
+
+    /*TRACK DETAIL*/
+
+    .trackDetail{
+        width: 100vw;
+        justify-self: center;
+    }
+
+    .tituloDetail{
+        font-size: 25vw;
+        width: 365vw;
+        justify-self: ;
+    }
+
+    .detailTrackPic{
+        width: 340vw;
+        height: 340vw;
+    }
+
+    .trackDetailText{
+        width: 250vw;
+        height: 50vw;
+        font-size: 12vw;
+    }
+
+    .trackDetailPP{
+        font-size: 15vw;
+    }
+    .trackDetail{
+        width: 376vw;
+        height: 560vw;
+        background-color: aliceblue;
+    }
+
+    .buttonTrack{
+        justify-self: center;
+        align-items: center;
+    }
+
+    /*INDEX*/
+
+    .indexSubtitles{
+        width: 375vw;
+        height: vw;
+        font-size: 35vw;
+        background-color:black;
+        color: white;
+    }
+
+    /*songs*/ 
+    .track-list{
+        height: 2450vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .indexSongPic{
+        width: 374vw;
+        height: 374vw;
+    }
+
+    .trackIndex{
+        font-size: 0vw;
+        text-align: center;
+    }
+
+    .trackIndexLinks{
+        font-size: 25vw;
+    }
+
+    
+
+    /*album*/
+    .album-list{
+        height: 2250vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .indexAlbumsPic{
+        width: 374vw;
+        height: 374vw;
+    }
+
+    .albumIndex{
+        font-size: 25vw;
+    }
+
+    .albumIndexLinks{
+        font-size: 25vw;
+    }
+
+
+    /*artist*/
+
+    .artist-list{
+        height: 2250vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .indexArtistPic{
+        width: 374vw;
+        height: 374vw;
+    }
+
+    .artistIndexLinks{
+        font-size: 25vw;
+        text-align: center;
+    }
+
+    .artistIndex{
+        font-size: 25vw;
+        text-align: ;
+    }
+    /* SANTIPRUEBA */
+
+    .detailArtistPic{
+        height: 600px;
+        width: 100%;
+    }
+    .albumDetailTrackList{
+        font-size: 10px;
+    }
+    .albumDetailTrackList{
+        font-size: 25vw;
+    }
+    .detailArtistTrackTitle{
+        font-size: 30vw;
+    }
+    .footerText{
+        font-size: 10vw; 
+        
+    }
+    .footer{ 
+        background-color: rgb(159, 138, 179,0.6);
+        display: flex;
+        justify-content: right;
+    }
+    .botonHeader{
+        display: block;
+        width: 100vw;
+        border: none;
+        background-color: #04AA6D;
+        padding: 14px 28px;
+        font-size: 20vw;
+        cursor: pointer;
+        text-align: center;
+    }
+    .buscadorTexto{
+        display: block;
+        width: 100vw;
+        border: none;
+        background-color: #e5f0ec;
+        padding: 14px 28px;
+        font-size: 15vw;
+        cursor: pointer;
+        text-align: center;
+
+
+    }
+
+}
+}
