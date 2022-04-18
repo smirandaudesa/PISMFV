@@ -160,6 +160,24 @@ justify-content: center;
     width: 40px;
     height: 40px;
 }
+.trackDetailAlbum{
+    background: #dac4c4;
+    display: flex;
+    justify-content: center;
+
+
+}
+.genresPP{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgreen;
+}
+.albumDetailText{
+    font-size: 20px;
+    color: black
+
+}
 /*MEDIDAS MOBILE*/
 @media (max-width: 390px) {
     .headerPadre{
@@ -207,28 +225,32 @@ justify-content: center;
     }
 
     .detailTrackPic{
-        width: 340vw;
-        height: 340vw;
+        width: 370vw;
+        height: 360vw;
     }
 
     .trackDetailText{
         width: 250vw;
         height: 50vw;
-        font-size: 12vw;
+        font-size: 18vw;
     }
 
     .trackDetailPP{
         font-size: 15vw;
     }
+
     .trackDetail{
         width: 376vw;
-        height: 560vw;
-        background-color: aliceblue;
+        height: 630vw;
+        background-color: rgb(226, 192, 224);
     }
 
     .buttonTrack{
-        justify-self: center;
-        align-items: center;
+        width: 308vw;
+        height: 22vw;
+        font-size: 12vw;
+        text-align: center;
+        position: fixed;
     }
 
     /*INDEX*/
@@ -264,8 +286,6 @@ justify-content: center;
     .trackIndexLinks{
         font-size: 25vw;
     }
-
-    
 
     /*album*/
     .album-list{
@@ -316,52 +336,79 @@ justify-content: center;
         font-size: 25vw;
         text-align: ;
     }
-    /* SANTIPRUEBA */
 
-    .detailArtistPic{
-        height: 600px;
-        width: 100%;
+    /*genres*/
+
+    .genreMain{
+        width: 378vw;
+        height: 500vw;
     }
+
+    .genresMainPic{
+        width: 280vw;
+    
+    }
+
     .albumDetailTrackList{
-        font-size: 10px;
+        font-size: 18vw;
     }
-    .albumDetailTrackList{
-        font-size: 25vw;
-    }
-    .detailArtistTrackTitle{
-        font-size: 30vw;
-    }
-    .footerText{
-        font-size: 10vw; 
-        
-    }
-    .footer{ 
-        background-color: rgb(159, 138, 179,0.6);
-        display: flex;
-        justify-content: right;
-    }
-    .botonHeader{
-        display: block;
-        width: 100vw;
-        border: none;
-        background-color: #04AA6D;
-        padding: 14px 28px;
+
+    .genresPP{
         font-size: 20vw;
-        cursor: pointer;
-        text-align: center;
     }
-    .buscadorTexto{
-        display: block;
-        width: 100vw;
-        border: none;
-        background-color: #e5f0ec;
-        padding: 14px 28px;
-        font-size: 15vw;
-        cursor: pointer;
+
+    .tituloDetail{
+        background-color: black;
+        color: white;
         text-align: center;
+        width: 378vw;
+    }
 
+    /*detail album*/
 
+    .trackDetailAlbum{
+        width: 376vw;
+        height: 1020vw;
+        background-color: rgb(226, 192, 224);
+    }
+    .albumDetailText{
+        font-size: 20vw;
+        color: black;
+        text-align: left;
+    
+    }
+
+    /*playlist*/
+    .playlistDetail{
+        width: 376vw;
+        height: 450vw;
+    }
+
+    .playlistMainPic{
+        width: 300vw;
+        height: ;
+    }
+
+    .playlistPP{
+        font-size: 20vw;
+        background-color: white;
+    }
+
+    .playlistTracks{
+        font-size: 18vw;
+    }
+
+    .playlistPic{
+        font-size: 14vw;
+    }
+    .detailGenreSubtitle{
+        font-size: 25vw;
+        text-align: center;
+        width: 370vw;
     }
 
 }
+    /* SANTIPRUEBA */
+
+
 }
