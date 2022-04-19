@@ -142,6 +142,7 @@ justify-content: center;
     background-color: #0C1821;
     display: flex;
     justify-content: center;
+    margin: 8px;
 }
 .playlistPic{
     width: 40px;
@@ -174,7 +175,7 @@ justify-content: center;
     background: #dac4c4;
     display: flex;
     justify-content: center;
-
+    margin: 8px;
 
 }
 .genresPP{
@@ -197,6 +198,15 @@ justify-content: center;
 .detailArtistPP{
     font-size: 20px;
 }
+
+.footerMV{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 8px;
+    margin: 8px;
+}
+
 /*MEDIDAS MOBILE*/
 @media (max-width: 390px) {
     .headerPadre{
@@ -248,7 +258,7 @@ justify-content: center;
     .trackDetailText{
         width: 250vw;
         height: 50vw;
-        font-size: 18vw;g
+        font-size: 18vw;
     }
 
     .trackDetailPP{
@@ -493,6 +503,9 @@ justify-content: center;
         width: 265vw;
     }
 
+    .footerMV{
+        width: 371vw;
+    }
 }
 
 
