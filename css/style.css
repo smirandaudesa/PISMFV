@@ -16,7 +16,16 @@ li {list-style-type: none;}
 }
 
 .logo{
-    width: 150px;
+    width: 300px;
+}
+.botonHeader{
+    color: blue;
+}
+buscadorTexto{
+    font-weight: 600;
+}
+.menuHeader{
+    
 }
 
 .logoContainer{
@@ -406,9 +415,30 @@ justify-content: center;
         text-align: center;
         width: 370vw;
     }
+    /*header*/
+    .botonHeader{
+        width: 265vw;
+        border: none;
+        background-color: lightgreen;
+        padding: 14px 28px;
+        font-size: 20vw;
+        text-align: center;
+    }
+    .buscadorTexto{
+        display: block;
+        width: 250vw;
+        border: none;
+        background-color: #e5f0ec;
+        padding: 14px 28px;
+        font-size: 20vw;
+        text-align: center;
+    }
+    .menuHeader{
+        font-size: 100px;
+        text-align: center;
+    }
 
 }
-    /* SANTIPRUEBA */
 
 
-}
+
