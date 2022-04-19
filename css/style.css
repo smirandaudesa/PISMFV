@@ -28,6 +28,7 @@ buscadorTexto{
     
 }
 
+
 .logoContainer{
     align-self: center;
 }
@@ -201,7 +202,6 @@ justify-content: center;
     .headerPadre{
         height: 150vw;
         width: 380vw;
-        background-color: ;
         background-repeat: no-repeat;
         background-size: 100%;
         justify-content: center;
@@ -215,7 +215,6 @@ justify-content: center;
     .logo{
         height: 100vw;
         width: auto;
-        opacity: ;
     }
     .logoContainer{
         height: 185vw;
@@ -239,7 +238,6 @@ justify-content: center;
     .tituloDetail{
         font-size: 25vw;
         width: 365vw;
-        justify-self: ;
     }
 
     .detailTrackPic{
@@ -352,7 +350,6 @@ justify-content: center;
 
     .artistIndex{
         font-size: 25vw;
-        text-align: ;
     }
 
     /*genres*/
@@ -404,7 +401,6 @@ justify-content: center;
 
     .playlistMainPic{
         width: 300vw;
-        height: ;
     }
 
     .playlistPP{
