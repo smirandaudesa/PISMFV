@@ -13,11 +13,11 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
    div.innerHTML += `            <h1 class="tituloDetail">${info.title}</h1>
    <section class="trackDetailAlbum">
        <article>
-           <img src="./img/man on the moon.png" class="detailTrackPic" alt=""> <br>
+           <img src="${info.cover_medium}" class="detailTrackPic" alt=""> <br>
        
-           <p class="albumDetailText" >By: </p><a class="trackDetailText" href="./detail-artist.html">Kid Cudi</a> <br>
-           <p class="albumDetailText">Released on: 11/12/2020</p>
-           <p class="albumDetailText">Genre:</p><a class="trackDetailText" href="./detail-genres.html">Trap</a> <br>
+           <p class="albumDetailText" >By: </p><a class="trackDetailText" href="./detail-artist.html?id=">${info.artist.name}</a> <br>
+           <p class="albumDetailText">${info.release_date}</p>
+           <p class="albumDetailText">Genre:</p><a class="trackDetailText" href="./detail-genres.html">${info.genres.data.name}</a> <br>
            <p class="albumDetailText">FULL TRACK:</p>
            <ol>`
            for(let i =0; i < info.tracks.data.length; i++){
