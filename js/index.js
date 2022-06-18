@@ -22,6 +22,13 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
             <img src="${info.albums.data[i].cover_medium}" class="indexAlbumsPic" alt="">
         </div>`
         }
+        for(let i = 0; i < 5; i++){
+            articulos[2].innerHTML += `<div>
+            <li class="artistIndex"><a class="artistIndexLinks" href="./detail-artist.html?id=${info.artists.data[i].id}">${info.artists.data[i].name}</a></li>
+            <img src="${info.artists.data[i].picture}" class="indexArtistPic" alt="">
+        </div>`
+        }
+        
     })
     .catch(function (error) {
         console.log('el error fue ' + error);
