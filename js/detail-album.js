@@ -10,14 +10,23 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     return result.json()
 })
 .then(function(info){
+    let generos = "Este disco no tiene generos"
+    for(let i = 0; i < info.genres.data.length; i++){
+        if(i == 0){
+            generos = `<a class="" href="./detail-genres.html?id=${info.genres.data[i].id}">${info.genres.data[i].name}</a>`
+        }else{
+            generos += `, <a class="" href="./detail-genres.html?id=${info.genres.data[i].id}">${info.genres.data[i].name}</a>`
+        }
+    }
+
    div.innerHTML += `            <h1 class="tituloDetail">${info.title}</h1>
    <section class="trackDetailAlbum">
        <article>
            <img src="${info.cover_medium}" class="detailTrackPic" alt=""> <br>
        
-           <p class="albumDetailText" >By: </p><a class="trackDetailText" href="./detail-artist.html?id=">${info.artist.name}</a> <br>
+           <p class="albumDetailText" >By: </p><a class="trackDetailText" href="./detail-artist.html?id=${info.artist.id}">${info.artist.name}</a> <br>
            <p class="albumDetailText">Release date: ${info.release_date}</p>
-           <p class="albumDetailText">Genre:</p><a class="trackDetailText" href="./detail-artist.html?id=${id}">${info.genres.data.name}</a> <br>
+           <p class="albumDetailText">Genre:</p>${generos} <br>
            <p class="albumDetailText">FULL TRACK:</p>
            <ol>`
            for(let i =0; i < info.tracks.data.length; i++){

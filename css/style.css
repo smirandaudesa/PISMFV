@@ -43,7 +43,7 @@ buscadorTexto{
 .artist-list{
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
 }
 .indexArtistPic{
     height: 300px;

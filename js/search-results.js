@@ -13,6 +13,15 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}
 .then(function(info){
  // for recorriendo data 
     console.log(info)
+    if (info.data.length == 0){
+        resultado.innerHTML = ` no hay resultado de busqueda para: ${q}`
+
+    }
+
+
+})
+.then(function(){
+    document.querySelector(".gif").style.display = "none"
 })
 .catch(function (error) {
     console.log('el error fue ' + error);

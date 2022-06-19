@@ -1,42 +1,43 @@
-// usar endpoinmt correcto
-// https://api.deezer.com/artist/${id} esto para nombre y foto
-// https://api.deezer.com/artist/${id}/albums esto para albums
-// un fecth adentr del otro solo queda  un catch(ultimo)
-//     fetch(`https://cors-anywhere.herokuapp.comhttps://api.deezer.com/artist/${id}/albums`)
-/*fetch
-then
-then(fetchthenthen)
-catch
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
 let id = queryStringObj.get('id');
-
 console.log(id)
-let div = document.querySelector('.contenido')
-console.log(div)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
-.then(function(result){
-    return result.json()
-})
-.then(function(info){
- 
-    console.log(info)
-})
-.catch(function (error) {
-    console.log('el error fue ' + error);
-})
-// redireccionar  correctamente
-//Foto del cantante/ artista.
-//Nombre del cantante/ artista.
-//Lista de máximo 5 albums.*/
-
-
-fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/25')
 	.then(function(response){
 	return response.json();
 })
 	.then(function(data){
 	console.log(data);
+    let listaAlbum = "";
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(discos){
+        console.log(discos)
+        let main = document.querySelector("main")
+        for (let i = 0; i< 5 ; i++){
+            listaAlbum += `<li><a class="albumDetailTrackList" href="./detail-album.html?id=${discos.data[i].id}">${discos.data[i].title}</a> </li>`
+        }
+        main.innerHTML = `   <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+        <h1 class="tituloDetail"> <a href="./detail-artist.html?id=${id}">${data.name}</a></h1>
+        <section class="trackDetailArtist">
+           <article class="detailArtistArticle">
+               <img src="${data.picture_medium}" class="detailArtistPic" alt=""> <br>
+           
+               <p class="detailArtistPP" >Top 5 Tracks:</p>
+                  <ol>
+                       ${listaAlbum}
+                  </ol>
+           </article>
+
+       </section> 
+        `
+
+        
+    })
+
 })
 	.catch(function(error){
 	console.log('El error fue: ' + error);
