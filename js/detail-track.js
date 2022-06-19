@@ -2,7 +2,26 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
 let id = queryStringObj.get('id');
 
-console.log(id)
+
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556')
+	.then(function(response){
+	return response.json();
+})
+	.then(function(data){
+	console.log(data);
+})
+	.catch(function(error){
+	console.log('El error fue: ' + error);
+})
+
+
+
+
+/*let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
+let id = queryStringObj.get('id');
+
+/*console.log(id)
 let div = document.querySelector('.contenido')
 console.log(div)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/`)
@@ -30,4 +49,4 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/`)
 .catch(function (error) {
     console.log('el error fue ' + error);
 })
-// redireccionar  correctamente en el
+ redireccionar  correctamente en el*/
