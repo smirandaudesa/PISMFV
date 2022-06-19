@@ -6,7 +6,7 @@
 /*fetch
 then
 then(fetchthenthen)
-catch*/
+catch
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
 let id = queryStringObj.get('id');
@@ -29,3 +29,26 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 //Foto del cantante/ artista.
 //Nombre del cantante/ artista.
 //Lista de máximo 5 albums.*/
+
+
+fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/25')
+	.then(function(response){
+	return response.json();
+})
+	.then(function(data){
+	console.log(data);
+})
+	.catch(function(error){
+	console.log('El error fue: ' + error);
+})
+
+/* //<img src="./img/kid cudi.jpeg" class="detailArtistPic" alt=""> <br>
+            
+        <p class="detailArtistPP" >Top 5 Tracks:</p>
+           <ol>
+                <li><a class="albumDetailTrackList" href="./detail-track.html">${info.picture_medium}</a> </li> 
+                <li><a class="albumDetailTrackList" href="./detail-track.html">2. THE SCOTTS</a></li>
+                <li><a class="albumDetailTrackList" href="./detail-track.html">3. Pursuit Of Happiness</a></li>
+                <li><a class="albumDetailTrackList" href="./detail-track.html">4. Tequila Shots</a></li>
+                <li><a class="albumDetailTrackList" href="./detail-track.html">5. The Void</a></li>
+           </ol>`/****** */

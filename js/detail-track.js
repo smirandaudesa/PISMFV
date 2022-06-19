@@ -11,7 +11,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556'
 	console.log(data);
 })
 	.catch(function(error){
-	console.log('El error fue: ' + error);
+	console.log('El error fue: ' + error); 
 })
 
 
