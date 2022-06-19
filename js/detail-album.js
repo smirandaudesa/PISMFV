@@ -16,8 +16,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
            <img src="${info.cover_medium}" class="detailTrackPic" alt=""> <br>
        
            <p class="albumDetailText" >By: </p><a class="trackDetailText" href="./detail-artist.html?id=">${info.artist.name}</a> <br>
-           <p class="albumDetailText">${info.release_date}</p>
-           <p class="albumDetailText">Genre:</p><a class="trackDetailText" href="./detail-genres.html">${info.genres.data.name}</a> <br>
+           <p class="albumDetailText">Release date: ${info.release_date}</p>
+           <p class="albumDetailText">Genre:</p><a class="trackDetailText" href="./detail-artist.html?id=${id}">${info.genres.data.name}</a> <br>
            <p class="albumDetailText">FULL TRACK:</p>
            <ol>`
            for(let i =0; i < info.tracks.data.length; i++){
