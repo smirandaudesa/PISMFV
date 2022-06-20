@@ -6,7 +6,14 @@ console.log(id)
 let articulos = document.querySelector('.artist-list')
 console.log(articulos)
 let a = ""
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
+.then(function(result){
+    return result.json()
+})
+.then(function(genero){
+    document.querySelector('.indexSubtitles').innerHTML = genero.name
+    
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
 .then(function(result){
     return result.json()
 })
@@ -21,6 +28,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
 
     }
 })
+})
+
 .catch(function (error) {
     console.log('el error fue ' + error);
 })
