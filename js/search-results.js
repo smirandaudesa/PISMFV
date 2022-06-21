@@ -31,15 +31,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
         console.log('el error fue ' + error);
     })
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
     let formulario = document.querySelector('form');
  
     formulario.addEventListener('submit', function(e) {
@@ -55,7 +46,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
            this.submit()
         }
     });
-
     
     /*
     if (info.data.length > 0) {

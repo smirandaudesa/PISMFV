@@ -147,6 +147,12 @@ justify-content: center;
 .playlistPic{
     width: 40px;
 }
+.searchPlaylist{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
 .artistSection{
     background-color: #0C1821;
     display: flex;
