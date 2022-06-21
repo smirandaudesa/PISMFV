@@ -1,5 +1,5 @@
 let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
+let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get('id');
 
 console.log(id)
@@ -7,7 +7,7 @@ let div = document.querySelector('.contenido')
 console.log(div)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .then(function(result){
-    return result.json() //convertir el string en un obj literal json
+    return result.json() 
 })
 .then(function(info){
     let generos = "Este disco no tiene generos"
@@ -29,7 +29,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
            <p class="albumDetailText">Genre:</p>${generos} <br>
            <p class="albumDetailText">FULL TRACK:</p>
            <ol>`
-           for(let i =0; i < info.tracks.data.length; i++){ // esra dentro del for  porque lo quiero repetir i ++ es un contador
+           for(let i =0; i < info.tracks.data.length; i++){ 
 
             div.innerHTML += `
                 <li><a class="albumDetailTrackList" href="./detail-track.html?id=${info.tracks.data[i].id}">${i+1}. ${info.tracks.data[i].title}</a></li>`

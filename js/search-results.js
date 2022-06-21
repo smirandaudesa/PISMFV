@@ -1,5 +1,5 @@
 let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
+let queryStringObj = new URLSearchParams(queryString); 
 let q = queryStringObj.get('búsqueda');
 console.log(q)
 
@@ -10,7 +10,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
         return result.json()
     })
     .then(function (info) {
-        // for recorriendo data 
         console.log(info)
         if (info.data.length == 0) {
             resultado.innerHTML = ` no hay resultado de busqueda para: ${q}`
@@ -18,7 +17,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
         }else{
             
             resultado.innerHTML = `Resultado de busqueda para: ${q}`
-            for(let i = 0; i < info.data.length; i++){ // if o else????
+            for(let i = 0; i < info.data.length; i++){
             lista.innerHTML += `<li><a class="searchTracks" href="./detail-artist.html?id=${info.data[i].artist.id}">${info.data[i].artist.name}</a>  <a class="searchTracks" href="./detail-track.html?id=${info.data[i].id}">${info.data[i].title}</a> <img class="searchMiniPic" src="${info.data[i].album.cover_small}" alt=""></li>`
         }
 } 
@@ -34,7 +33,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
     let formulario = document.querySelector('form');
  
     formulario.addEventListener('submit', function(e) {
-     /* Primera linea de todo evento */
          e.preventDefault();
         let inputBusqueda = document.querySelector('input');
  
@@ -46,10 +44,3 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
            this.submit()
         }
     });
-    
-    /*
-    if (info.data.length > 0) {
-        resultado.innerHTML = `<li><a class="searchTracks" href="./detail-artist.html"> Drake  </a> <img class="searchMiniPic" src="${info.data.album.cover_small}" alt=""></li>`
-
-    }
-    */

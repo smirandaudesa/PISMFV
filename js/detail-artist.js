@@ -1,5 +1,5 @@
 let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
+let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get('id');
 console.log(id)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
@@ -41,14 +41,3 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 	.catch(function(error){
 	console.log('El error fue: ' + error);
 })
-
-/* //<img src="./img/kid cudi.jpeg" class="detailArtistPic" alt=""> <br>
-            
-        <p class="detailArtistPP" >Top 5 Tracks:</p>
-           <ol>
-                <li><a class="albumDetailTrackList" href="./detail-track.html">${info.picture_medium}</a> </li> 
-                <li><a class="albumDetailTrackList" href="./detail-track.html">2. THE SCOTTS</a></li>
-                <li><a class="albumDetailTrackList" href="./detail-track.html">3. Pursuit Of Happiness</a></li>
-                <li><a class="albumDetailTrackList" href="./detail-track.html">4. Tequila Shots</a></li>
-                <li><a class="albumDetailTrackList" href="./detail-track.html">5. The Void</a></li>
-           </ol>`/****** */

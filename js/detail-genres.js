@@ -1,5 +1,5 @@
 let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
+let queryStringObj = new URLSearchParams(queryString); 
 let id = queryStringObj.get('id');
 console.log(id)
 
