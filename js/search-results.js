@@ -30,11 +30,21 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${q}`
     .catch(function (error) {
         console.log('el error fue ' + error);
     })
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
 
     
     /*
     if (info.data.length > 0) {
         resultado.innerHTML = `<li><a class="searchTracks" href="./detail-artist.html"> Drake  </a> <img class="searchMiniPic" src="${info.data.album.cover_small}" alt=""></li>`
-
     }
     */

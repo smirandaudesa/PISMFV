@@ -31,7 +31,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
                        ${listaAlbum}
                   </ol>
            </article>
-
        </section> 
         `
 

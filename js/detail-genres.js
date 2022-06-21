@@ -1,11 +1,14 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString); // metodo para convertir el string en objeto literal clave valor
 let id = queryStringObj.get('id');
-
 console.log(id)
+
 let articulos = document.querySelector('.artist-list')
+
 console.log(articulos)
+
 let a = ""
+
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
 .then(function(result){
     return result.json()
@@ -27,6 +30,9 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
     </div>`
 
     }
+})
+.catch(function (error) {
+    console.log('el error fue ' + error);
 })
 })
 
