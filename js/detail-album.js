@@ -7,7 +7,7 @@ let div = document.querySelector('.contenido')
 console.log(div)
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .then(function(result){
-    return result.json()
+    return result.json() //convertir el string en un obj literal json
 })
 .then(function(info){
     let generos = "Este disco no tiene generos"
@@ -19,7 +19,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
         }
     }
 
-   div.innerHTML += `            <h1 class="tituloDetail">${info.title}</h1>
+   div.innerHTML += ` <h1 class="tituloDetail">${info.title}</h1>
    <section class="trackDetailAlbum">
        <article>
            <img src="${info.cover_medium}" class="detailTrackPic" alt=""> <br>
@@ -29,7 +29,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
            <p class="albumDetailText">Genre:</p>${generos} <br>
            <p class="albumDetailText">FULL TRACK:</p>
            <ol>`
-           for(let i =0; i < info.tracks.data.length; i++){
+           for(let i =0; i < info.tracks.data.length; i++){ // esra dentro del for  porque lo quiero repetir i ++ es un contador
 
             div.innerHTML += `
                 <li><a class="albumDetailTrackList" href="./detail-track.html?id=${info.tracks.data[i].id}">${i+1}. ${info.tracks.data[i].title}</a></li>`
